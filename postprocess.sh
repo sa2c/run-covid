@@ -19,6 +19,6 @@ module load parallel
 
 source settings.sh
 
-parallel Rscript ../covid-uk/parallel-recombination.R {1} ${NUMBER_OF_SEEDS} ::: ${ANALYSES}
+parallel Rscript ./covid-uk/parallel-recombination.R {1} ${NUMBER_OF_SEEDS} ::: ${ANALYSES}
 
-Rscript ../covid-uk/UK-view.R
+Rscript ./covid-uk/UK-view.R

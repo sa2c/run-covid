@@ -21,4 +21,4 @@ source settings.sh
 
 parallel --max-procs ${SLURM_NTASKS} --joblog output/parallel_joblog_ANALYSIS \
     srun --nodes=1 --ntasks=1 \
-    "bash ../covid-uk/run_single_covid.sh {1} {2} ${NUMBER_OF_SEEDS} > covid_{1}_{2}.out 2> covid_{1}_{2}.err" ::: $(seq 1 ${NUMBER_OF_SEEDS}) ::: ANALYSIS
+    "bash ./covid-uk/run_single_covid.sh {1} {2} ${NUMBER_OF_SEEDS} > covid_{1}_{2}.out 2> covid_{1}_{2}.err" ::: $(seq 1 ${NUMBER_OF_SEEDS}) ::: ANALYSIS
