@@ -7,12 +7,12 @@ Supercomputing Wales SUNBIRD machine in Swansea).
 
 1. Clone this repository to a convenient location on SUNBIRD.
 
-    git clone https://github.com/sa2c/run-covid
+       git clone https://github.com/sa2c/run-covid
 
 2. Tell git to pull down the corresponding version of the covid-uk software.
 
-    cd run-covid
-    git submodule update
+       cd run-covid
+       git submodule update
 
 
 ## Usage
