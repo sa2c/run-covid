@@ -47,3 +47,11 @@ parallel with GNU Parallel.
 
 `postprocess.sh` combines the parallel outputs into one file per analysis using
 `parallel-recombination.R`, and then plots and tabulates the results with `UK-view.R`
+
+
+## Timings
+
+Of the seven analysis, analysis 2.2 is currently the longest-running, taking a little over
+an hour, so will sit on the critical path. Assuming the jobs do not need to queue, the
+full analysis and visualisation will run in 1 hour 14 minutes (1:08 for the simulations,
+and 6 minutes for the recombination and visualisation).
