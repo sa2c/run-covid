@@ -7,6 +7,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --time=0-2:00
+#SBATCH --signal=B:USR1@120
 
 module purge
 
