@@ -12,6 +12,7 @@ Supercomputing Wales SUNBIRD machine in Swansea).
 2. Tell git to pull down the corresponding version of the covid-uk software.
 
        cd run-covid
+       git submodule init
        git submodule update
 
 
