@@ -11,13 +11,7 @@
 #SBATCH --time=0-0:30
 #SBATCH --signal=B:USR1@120
 
-module purge
-
-module load compiler/gnu/8/1.0
-module load gsl/2.6
-module load R/3.6.2
-module load parallel
-
+source modules.sh
 source settings.sh
 
 # Create a build directory in the RAM disk so run is independent

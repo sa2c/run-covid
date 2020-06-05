@@ -9,12 +9,7 @@
 #SBATCH --time=0-2:00
 #SBATCH --signal=B:USR1@120
 
-module purge
-
-module load compiler/gnu/8/1.0
-module load gsl/2.6
-module load R/3.6.2
-module load parallel
+source modules.sh
 
 export OMP_NUM_THREADS=1
 

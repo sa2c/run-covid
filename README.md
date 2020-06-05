@@ -3,6 +3,17 @@
 A utility to run the `covid-uk` workflow on Slurm clusters (specifically the
 Supercomputing Wales SUNBIRD machine in Swansea).
 
+## Dependencies
+
+The code expects to find the following:
+
+* GSL (in the `$C_INCLUDE_PATH`)
+* A C++ compiler (in `$CXX`)
+* GNU Parallel (available in the `$PATH` as `parallel`)
+* R (available in the `$PATH` as `Rscript`)
+
+These can set up in `modules.sh`, where modules for SUNBIRD are currently set.
+
 ## Installation
 
 1. Clone this repository to a convenient location on SUNBIRD.
